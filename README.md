@@ -1,2 +1,0 @@
-# mydump
-web technology lab
