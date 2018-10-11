@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <span id="p"></span><br>
+    <span id='p2'></span>
+    <span id='p3'></span>
+    
+    <script>
+        var obj = [
+            {
+               name:"aaa",
+                regno:"u1",
+                dob:"2002",
+            },
+            {
+                name:"bbb",
+                regno:"u2",
+                dob:"1999",
+            },
+            {
+                name:"ccc",
+                regno:"u3",
+                dob:"2001",
+            },
+           
+            
+        ];
+ 
+
+        var dg = [];
+        var dl =[];
+        
+        for(var i in obj)
+            {
+                document.getElementById('p').innerHTML+=obj[i].name+"'s Reg no is: "+obj[i].regno+"<br>";
+            }
+        for(var j =0; j<obj.length; j++)
+            {
+                if(parseInt(obj[j].dob)>2000)
+                    {dg.push(obj[j].dob)}
+                else{
+                    dl.push(obj[j].dob);
+                }
+            }
+
+            document.getElementById('p2').innerHTML+="DOB greater than 2000 : ";
+        for (var k in dg ) {
+          document.getElementById('p2').innerHTML+="    " + dg[k]+"<br>";
+}
+
+document.getElementById('p3').innerHTML+="DOB less than 2000 : ";
+        for (var l in dl) {
+   document.getElementById('p3').innerHTML+=" " + dl[l]+"<br>";
+}
+        
+    </script>
+</body>
+</html>
