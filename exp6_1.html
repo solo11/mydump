@@ -1,0 +1,24 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <center><h1 id="time"></h1></center>
+   
+    <script>
+      var d = new Date();
+        
+        function display()
+        {var d = new Date();
+        var hr = d.getHours();
+        var min= d.getMinutes();
+        var sec = d.getSeconds();
+          document.getElementById("time").innerHTML="hours:"+hr+" min: "+min+" sec: "+sec;
+        }
+        
+        setInterval("display()",1000);
+    </script>
+</body>
+</html>
