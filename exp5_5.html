@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function calculate(){
+            var a=parseInt(document.getElementById("small").value);
+              var b=parseInt(document.getElementById("medium").value);
+                var c=parseInt(document.getElementById("large").value);
+               var total=a+b+c;
+                var tax=(total*9)/100;
+                var tax1=(total*10)/100;
+                var tax2=(total*15)/100;
+                var tax3=(total*20)/100;
+                var cost=total+tax;
+                var cost1=total+tax1;
+                var cost2=total+tax2;
+                var cost3=total+tax3;
+               
+                var tip=parseInt(document.querySelector('input[name="tip1"]:checked').value);
+                var tipcost=(cost*tip)/100;
+                var totalcost=cost+tipcost;
+                
+                document.getElementById("price").innerHTML=cost1;
+                var tip=parseInt(document.querySelector('input[name="tip2"]:checked').value);
+                var tipcost=(cost*tip)/100;
+                var totalcost=cost+tipcost;
+                
+                document.getElementById("price").innerHTML=cost2;
+          
+          var tip=parseInt(document.querySelector('input[name="tip3"]:checked').value);
+                var tipcost=(cost*tip)/100;
+                var totalcost=cost+tipcost;
+                
+                document.getElementById("price").innerHTML=cost3;
+          
+          
+            
+               
+            }
+            </script>
+    
+    </head>
+    <body id="body">
+        <div id="div1"> PIZZA ORDER FORM</div><br><br>
+        <fieldset id="f1"><br>
+            <h2 style="text-align:center;">SMALL PIZZA : <input  type="text" id="small"  ><br><br></h2>
+          <h2 style="text-align:center;">  MEDIUM PIZZA : <input  type="text" id="medium" ><br><br></h2>
+           <h2 style="text-align:center;">LARGE PIZZA : <input  type="text" id="large"  ><br><br></h2>
+            <h2 style="text-align:center;" >TIP :</h2>
+           <h2 style="text-align:center;" > <label><input type="radio" name="tip1"  value="10%"  id="t1" >10% </label></h2>
+           <h2 style="text-align:center;"> <label><input type="radio" name="tip2"  value="15%"  id="t2" > 15% </label></h2>
+
+           <h2 style="text-align:center;"> <label><input type="radio" name="tip3"  value="20%" id="t3" " > 20% </label></h2>
+           <h2 style=" text-align:center;"> <button   id="submit" value="SUBMIT" onclick="calculate();"> CALCULATE ORDER</button></h2>
+
+            </fieldset>
+        <p style="color:red;text-align:center;  font-size:30px;" >
+           COST OF ORDER : <span id="price" ></span>
+            </p>
+    </body>
+</html>
