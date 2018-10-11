@@ -1,0 +1,40 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Animate the image</h1>
+    <img id="ob" src="Picture1.png"><br>
+    <input type = 'button' onclick="start()" value="start">
+        <button onclick="stop()" value="stop">stop</button>
+    
+    <script>
+        
+        var obj =null;
+        var animate;
+        function init()
+        {
+            obj=document.getElementById("ob");
+        obj.style.position = 'relative';
+            obj.style.left='0px';
+        }
+        function start()
+        {
+          obj.style.left = parseInt(obj.style.left)+1+'px';
+            animate = setTimeout('start()',10);
+        }
+        
+        function stop()
+        {
+            clearTimeout(animate);
+            obj.style.left= '0px';    
+        }
+        
+        window.onload = init();
+    </script>
+</body>
+</html>
+
+
