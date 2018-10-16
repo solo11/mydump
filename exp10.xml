@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="exp10.css"?>
+<office>
+
+   <employee>
+     <firstname id="main">First Name</firstname> 
+            <lastname id="main">Last Name</lastname> 
+        
+        <empid id="main">Employee Id</empid>
+        <gender id="main">Gender</gender>
+        <phno id="main">Phone no.</phno>
+        <email id="main">Email</email>
+        <addr id="main">Address</addr>
+        <designation id="main">Designation</designation>
+        <dept id="main">Department</dept>
+        <sal id="main">Salary</sal>
+   </employee>
+    <employee>
+        
+            <firstname>John</firstname> 
+            <lastname>R</lastname> 
+        
+        <empid>101</empid>
+        <gender>male</gender>
+        <phno>9486627946</phno>
+        <email>ff199@gmail.com</email>
+        <addr>hyderabad</addr>
+        <designation>Advisory board</designation>
+        <dept>IT</dept>
+        <sal>3,00,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>David</firstname> 
+            <lastname>Will</lastname> 
+        
+        <empid>102</empid>
+        <gender>male</gender>
+        <phno>9486624946</phno>
+        <email>david.wislon@gmail.com</email>
+        <addr>coimbatore</addr>
+        <designation>manager</designation>
+        <dept>finance</dept>
+        <sal>60,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>jasper</firstname> 
+            <lastname>jane</lastname> 
+        
+        <empid>103</empid>
+        <gender>female</gender>
+        <phno>9483327946</phno>
+        <email>jj@gmail.com</email>
+        <addr>Coimbatore</addr>
+        <designation>Manager</designation>
+        <dept>PR</dept>
+        <sal>70,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>zayn</firstname> 
+            <lastname>M</lastname> 
+        
+        <empid>104</empid>
+        <gender>male</gender>
+        <phno>9486633346</phno>
+        <email>zm@gmail.com</email>
+        <addr>hyderabad</addr>
+        <designation>HR</designation>
+        <dept>PR</dept>
+        <sal>70,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>Jessi</firstname> 
+            <lastname>james</lastname> 
+        
+        <empid>105</empid>
+        <gender>male</gender>
+        <phno>9486612346</phno>
+        <email>jam@gmail.com</email>
+        <addr>hyderabad</addr>
+        <designation>Incoming</designation>
+        <dept>sales</dept>
+        <sal>70,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>Anma</firstname> 
+            <lastname>jad</lastname> 
+        
+        <empid>106</empid>
+        <gender>male</gender>
+        <phno>9486633346</phno>
+        <email>rd@gmail.com</email>
+        <addr>hyderabad</addr>
+        <designation>Admin</designation>
+        <dept>Accounts</dept>
+        <sal>60,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>jaccob</firstname> 
+            <lastname>Smith</lastname> 
+        
+        <empid>107</empid>
+        <gender>male</gender>
+        <phno>9586633346</phno>
+        <email>jsmithh@gmail.com</email>
+        <addr>Delhi</addr>
+        <designation>Head HR</designation>
+        <dept>Human resource</dept>
+        <sal>70,000</sal>
+    </employee>
+    <employee>
+        
+            <firstname>Amith</firstname> 
+            <lastname>Kumar</lastname> 
+        
+        <empid>108</empid>
+        <gender>male</gender>
+        <phno>9585633346</phno>
+        <email>amia@gmail.com</email>
+        <addr>Hyderabad</addr>
+        <designation>Head HR</designation>
+        <dept>Human resource</dept>
+        <sal>70,000</sal>
+    </employee>
+</office>
