@@ -1,0 +1,93 @@
+
+*{
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+office
+{
+    background-color:cornflowerblue;
+        display:table;
+        margin-left: 12%;
+        margin-top: 5%;
+        
+}
+employee
+{
+display:table-row;
+
+
+}
+firstname{
+    display: table-cell;
+    border: 1px solid black;
+    background-color: bisque;
+    
+}
+lastname{
+    display: table-cell;
+    border: 1px solid black;
+    background-color: bisque;
+    
+}
+empid{
+    display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+
+}
+gender{
+    display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+
+}
+email{
+    display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+
+}
+    phno{
+       display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+
+    }
+    designation{
+        display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+    }
+    dept{
+        display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+    }
+    sal{
+      display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+    }
+    addr{
+        display: table-cell;
+    border:1px solid black;
+    background-color: bisque;
+    
+    }
+    
+
+#main{
+    background-color: darkslategrey;
+    font-family: cursive;
+    color: aliceblue;
+    text-align: center;
+}
