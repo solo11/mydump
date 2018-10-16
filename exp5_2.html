@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Kilometers to Meters Length Converter</title>
+ <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+       <script type="text/javascript">
+
+var factors1 = new Array(1, 0.01, 0.00001, 0.00000621, 0.3937, 0.0328, 0.01094);
+var factors2 = new Array(100, 1, 0.001, 0.000621, 39.37, 3.28,  1.094);
+var factors3 = new Array(100000, 1000, 1, 0.621, 39370, 3280, 1094);
+
+var factors = new Array(factors1,factors2,factors3);
+
+function convert_unit()
+{
+	from_index = document.length_con.from_unit.selectedIndex;
+	to_index = document.length_con.to_unit.selectedIndex;
+	factor = factors[from_index][to_index];
+	
+		document.getElementById("to_value").innerHTML = factor * document.length_con.from_value.value;
+}
+</script>
+
+        
+    </head>
+<body id="body">
+<centre >
+<h2 id="c1">Length Converter</h2>
+</centre>
+
+<p><form name="length_con">
+
+<table>
+
+	
+
+	<tr>
+		<td>Enter </td>
+		<td><input type="text" name="from_value" placeholder="enter number" size="12" maxlength="12"></td>
+		<td> <input type=button value="To" onClick="convert_unit()";> </td>
+		<td><div id="to_value"> </div></td>
+	</tr>
+        <tr>
+		<td>From </td>
+
+		<td>
+			<select name=from_unit onChange="convert_unit()";>
+			<option> centimeters
+			<option> meters
+			<option> kilometers
+			
+			</select>
+
+		</td>
+		<td>  To </td>
+		<td>
+			<select name=to_unit onChange="convert_unit()";>
+			<option> centimeters
+			<option> meters
+			<option> kilometers
+			
+			</select>
+</td>
+	</tr>
+	<tr>
+		<td colspan="4"> </td>
+	</tr>
+</table>
+
+</form>
+</body>
+</html>
