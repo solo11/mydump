@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script  type="text/javascript">
+            function calculate(){
+                var weight=document.getElementById("weight").value;
+                var height=document.getElementById("height").value;
+
+              
+                
+               
+                var BMI=weight/(height*height);
+               
+                document.getElementById("score").innerHTML=+BMI;
+                        var score =BMI;
+             
+                if(score<18)
+                {
+                   document.getElementById("type").innerText= "UnderWeight";
+                }
+                             else  if(score>=18&&score<25)
+                {
+                   document.getElementById("type").innerText= "Normal";
+                }
+                         else  if(score>=25&&score<30)
+                {
+                   document.getElementById("type").innerText= "OverWeight";
+                }
+                          else  if(score>30)
+                {
+                   document.getElementById("type").innerText= "Obese";
+                }
+            }
+            </script>
+           
+        
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+ 
+        <H1>Calculate your body mass index(BMI)!</h1>
+    
+        <fieldset>
+           
+            <p >Weight(in kilogram): <input text="text" id="weight" >
+            <select id="weightunits">
+        <option value="kg" selected="selected">kilograms</option>
+        
+            </select></p>
+
+            
+            <br><br>
+            <p >Height(in meters): <input type="text" id="height">
+             <select  id="heightunits">
+        <option value="metres" selected="selected">metres</option>
+        
+             </select></p>
+            <br><br>
+            <button onclick="calculate()">Get BMI!</button>
+         
+                    </fieldset>
+        <BR><BR>
+      
+        <b style="color:red;font-size: 20px">Your BMI is: <span id="score"></span><br><br>
+            Your Body type is: <span id="type"></span><br><br>
+           </b>
+        
+            
+    </body>
+</html>
